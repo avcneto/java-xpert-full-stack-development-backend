@@ -27,11 +27,10 @@ public class Artista {
 	String nacionalidade;
 	@Column(name = "genero", length = 20)
 	String genero;
-	
-	@OneToMany(mappedBy="artista", cascade=CascadeType.ALL)
+
+	@OneToMany(mappedBy = "artista", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("artista")
 	private List<Musica> musicas;
-
 
 	@Override
 	public String toString() {
@@ -50,8 +49,6 @@ public class Artista {
 	public Artista() {
 		super();
 	}
-
-
 
 	public Artista(int id, String nomeArtistico, String nacionalidade, String genero, List<Musica> musicas) {
 		super();
