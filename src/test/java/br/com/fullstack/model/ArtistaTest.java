@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 public class ArtistaTest {
 
 	@Test
-	void setAll() {
+	void shouldCreateArtista() {
 
 		Artista artista = new Artista();
 		artista.setAll(0, "Anita", "Brasileira", "Feminina");
